@@ -1,5 +1,4 @@
-import React from "react";
-// import data
+import { Link } from "react-router-dom";
 import { nav } from "../data";
 
 const MobileNav = () => {
@@ -10,9 +9,9 @@ const MobileNav = () => {
           const { href, name } = item;
           return (
             <li key={index}>
-              <a className="link text-white text-xl" href={href}>
+              <Link className="link text-white text-xl" to={href}>
                 {name}
-              </a>
+              </Link>
             </li>
           );
         })}
