@@ -25,7 +25,7 @@ const Hero = () => {
               className="flex items-center max-w-sm lg:max-w-full mx-auto lg:mx-0 gap-x-2 lg:gap-x-6"
               data-aos="fade-down"
               data-aos-delay="700">
-              <button className="btn-accent btn btn-md lg:btn-lg flex justify-center items-center lg:gap-x-4">
+              <button className="btn-accent btn btn-md md:text-[18px] lg:btn-lg flex justify-center items-center lg:gap-x-4">
                 {btnText}
                 <HiOutlineChevronDown />
               </button>

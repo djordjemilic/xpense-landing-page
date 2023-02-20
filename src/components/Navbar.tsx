@@ -7,7 +7,7 @@ const Navbar = () => {
       <ul className="flex gap-x-10">
         {nav.map((item, index) => {
           // destructure item
-          const { href, name } = item;
+          const { href, name }: { href: string; name: string } = item;
           return (
             <li key={index}>
               <Link className="hover:text-accent transition" to={href}>
