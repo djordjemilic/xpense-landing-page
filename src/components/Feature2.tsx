@@ -10,8 +10,8 @@ interface Feature {
 }
 
 const Feature2 = () => {
-  const { feature2 } = features;
-  const { pretitle, title, subtitle, btnLink, btnIcon, image }: Feature = feature2;
+  const { feature2 }: { feature2: Feature } = features;
+  const { pretitle, title, subtitle, btnLink, btnIcon, image } = feature2;
   return (
     <section className="section">
       <div className="container mx-auto">

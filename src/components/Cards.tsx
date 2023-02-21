@@ -1,5 +1,4 @@
 import { product } from "../data";
-
 import ArrowImg from "../assets/img/product/cards/arrow.svg";
 import { useState } from "react";
 
@@ -11,7 +10,7 @@ interface Cards {
 }
 
 const Cards = () => {
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState<React.SetStateAction<number>>(1);
 
   const { cards }: { cards: Cards[] } = product;
   return (
