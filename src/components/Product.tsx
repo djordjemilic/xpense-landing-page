@@ -1,4 +1,5 @@
 import { product } from "../data";
+import Cards from "./Cards";
 
 const Product = () => {
   const { title, subtitle }: { title: string; subtitle: string } = product;
@@ -20,6 +21,9 @@ const Product = () => {
             data-aos-delay="400">
             {subtitle}
           </p>
+        </div>
+        <div>
+          <Cards />
         </div>
       </div>
     </section>
