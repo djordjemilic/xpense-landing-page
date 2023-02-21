@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Header from "./components/Header";
 import Overview from "./components/Overview";
 import Brands from "./components/Brands";
+import Feature1 from "./components/Feature1";
 
 const App = () => {
   Aos.init({
@@ -16,6 +17,7 @@ const App = () => {
       <Hero />
       <Overview />
       <Brands />
+      <Feature1 />
     </div>
   );
 };

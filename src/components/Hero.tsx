@@ -1,9 +1,16 @@
-import React from "react";
 import { hero } from "../data";
 import { HiOutlineChevronDown } from "react-icons/hi";
 
+interface Hero {
+  title: string;
+  subtitle: string;
+  btnText: string;
+  compText: string;
+  image: string;
+}
+
 const Hero = () => {
-  const { title, subtitle, btnText, compText, image } = hero;
+  const { title, subtitle, btnText, compText, image }: Hero = hero;
   return (
     <section className="min-h-[900px] py-12">
       <div className="container mx-auto min-h-[900px] flex justify-center items-center">
