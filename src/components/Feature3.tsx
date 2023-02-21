@@ -9,16 +9,16 @@ interface Feature {
   image: string;
 }
 
-const Feature1 = () => {
-  const { feature1 } = features;
-  const { pretitle, title, subtitle, btnLink, btnIcon, image }: Feature = feature1;
+const Feature3 = () => {
+  const { feature3 } = features;
+  const { pretitle, title, subtitle, btnLink, btnIcon, image }: Feature = feature3;
   return (
     <section className="section">
       <div className="container mx-auto">
         <div className=" flex flex-col lg:flex-row lg:items-center lg:gap-x-[30px]">
           <div className="flex-1" data-aos="fade-right" data-aos-offset="400">
             <span className="pretitle">{pretitle}</span>
-            <h1 className="title lg:max-w-lg">{title}</h1>
+            <h1 className="title lg:max-w-xl">{title}</h1>
             <p className="lead lg:max-w-md">{subtitle}</p>
             <button className="btn-link flex items-center gap-x-3 hover:gap-x-5 transition-all">
               {btnLink} <img src={btnIcon} alt="button icon" />
@@ -34,4 +34,4 @@ const Feature1 = () => {
   );
 };
 
-export default Feature1;
+export default Feature3;

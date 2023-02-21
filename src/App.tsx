@@ -5,6 +5,8 @@ import Header from "./components/Header";
 import Overview from "./components/Overview";
 import Brands from "./components/Brands";
 import Feature1 from "./components/Feature1";
+import Feature2 from "./components/Feature2";
+import Feature3 from "./components/Feature3";
 
 const App = () => {
   Aos.init({
@@ -18,6 +20,8 @@ const App = () => {
       <Overview />
       <Brands />
       <Feature1 />
+      <Feature2 />
+      <Feature3 />
     </div>
   );
 };

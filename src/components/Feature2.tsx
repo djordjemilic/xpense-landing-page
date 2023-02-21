@@ -9,14 +9,17 @@ interface Feature {
   image: string;
 }
 
-const Feature1 = () => {
-  const { feature1 } = features;
-  const { pretitle, title, subtitle, btnLink, btnIcon, image }: Feature = feature1;
+const Feature2 = () => {
+  const { feature2 } = features;
+  const { pretitle, title, subtitle, btnLink, btnIcon, image }: Feature = feature2;
   return (
-    <section className="section">
+    <section className="feature mt-10 lg:mt-5">
       <div className="container mx-auto">
-        <div className=" flex flex-col lg:flex-row lg:items-center lg:gap-x-[30px]">
-          <div className="flex-1" data-aos="fade-right" data-aos-offset="400">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-x-[30px]">
+          <div className="flex-1 order-2 lg:order-1" data-aos="fade-right" data-aos-offset="400">
+            <img src={image} alt="" />
+          </div>
+          <div className="flex-1 order-1 lg:order-2" data-aos="fade-left" data-aos-offset="300">
             <span className="pretitle">{pretitle}</span>
             <h1 className="title lg:max-w-lg">{title}</h1>
             <p className="lead lg:max-w-md">{subtitle}</p>
@@ -24,14 +27,10 @@ const Feature1 = () => {
               {btnLink} <img src={btnIcon} alt="button icon" />
             </button>
           </div>
-
-          <div className="flex-1" data-aos="fade-right" data-aos-offset="300">
-            <img src={image} alt="" />
-          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Feature1;
+export default Feature2;
