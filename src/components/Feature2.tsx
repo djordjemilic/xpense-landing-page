@@ -13,7 +13,7 @@ const Feature2 = () => {
   const { feature2 } = features;
   const { pretitle, title, subtitle, btnLink, btnIcon, image }: Feature = feature2;
   return (
-    <section className="feature mt-10 lg:mt-5">
+    <section className="section">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-x-[30px]">
           <div className="flex-1 order-2 lg:order-1" data-aos="fade-right" data-aos-offset="400">
